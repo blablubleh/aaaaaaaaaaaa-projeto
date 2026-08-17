@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="VisãoAcolhedora - informação, acessibilidade e tecnologia para pessoas com baixa visão."
+    >
+
+    <title>VisãoAcolhedora</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         ACESSIBILIDADE
+    ========================== -->
+
+    <div class="accessibility-bar">
+
+        <div class="accessibility-content">
+
+            <span>Acessibilidade:</span>
+
+            <button id="increaseFont" type="button">
+                A+
+            </button>
+
+            <button id="decreaseFont" type="button">
+                A-
+            </button>
+
+            <button id="contrastButton" type="button">
+                Contraste
+            </button>
+
+            <button id="darkMode" type="button">
+                Modo escuro
+            </button>
+
+            <button id="spacingButton" type="button">
+                Espaçamento
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+
+                <span class="logo-icon">
+
+                    <svg
+                        viewBox="0 0 64 64"
+                        aria-hidden="true"
+                    >
+                        <ellipse
+                            cx="32"
+                            cy="32"
+                            rx="25"
+                            ry="16"
+                            fill="none"
+                            stroke="white"
+                            stroke-width="4"
+                        />
+
+                        <circle
+                            cx="32"
+                            cy="32"
+                            r="8"
+                            fill="white"
+                        />
+                    </svg>
+
+                </span>
+
+                <span>
+                    Visão<span>Acolhedora</span>
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                Menu
+            </button>
+
+
+            <nav>
+
+                <a href="#inicio">Início</a>
+
+                <a href="#sobre">Sobre</a>
+
+                <a href="#causas">Causas</a>
+
+                <a href="#tecnologia">Tecnologia</a>
+
+                <a href="#recursos">Recursos</a>
+
+                <a href="#faq">FAQ</a>
+
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            id="inicio"
+            class="hero"
+        >
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text">
+
+                    <span class="badge">
+                        Acessibilidade e inclusão
+                    </span>
+
+                    <h1>
+                        Uma visão mais
+                        <span>acolhedora</span>
+                        para todos.
+                    </h1>
+
+                    <p>
+                        Informação, tecnologia e acessibilidade
+                        para tornar o mundo mais inclusivo para
+                        pessoas com baixa visão.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#sobre"
+                            class="button primary"
+                        >
+                            Conheça o projeto
+                        </a>
+
+                        <a
+                            href="#recursos"
+                            class="button secondary"
+                        >
+                            Ver recursos
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ILUSTRAÇÃO -->
+
+                <div class="hero-card">
+
+                    <div class="hero-illustration">
+
+                        <svg
+                            viewBox="0 0 500 350"
+                            role="img"
+                            aria-label="Ilustração de acessibilidade visual"
+                        >
+
+                            <defs>
+
+                                <linearGradient
+                                    id="pinkGradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="1"
+                                    y2="1"
+                                >
+
+                                    <stop
+                                        offset="0%"
+                                        stop-color="#ad1457"
+                                    />
+
+                                    <stop
+                                        offset="50%"
+                                        stop-color="#d81b60"
+                                    />
+
+                                    <stop
+                                        offset="100%"
+                                        stop-color="#f48fb1"
+                                    />
+
+                                </linearGradient>
+
+                            </defs>
+
+
+                            <!-- fundo -->
+
+                            <circle
+                                cx="250"
+                                cy="175"
+                                r="130"
+                                fill="#fce4ec"
+                            />
+
+
+                            <!-- olho -->
+
+                            <path
+                                d="M90 175
+                                   Q250 55 410 175
+                                   Q250 295 90 175Z"
+                                fill="white"
+                                stroke="#ad1457"
+                                stroke-width="8"
+                            />
+
+
+                            <circle
+                                cx="250"
+                                cy="175"
+                                r="60"
+                                fill="url(#pinkGradient)"
+                            />
+
+
+                            <circle
+                                cx="250"
+                                cy="175"
+                                r="25"
+                                fill="#35111f"
+                            />
+
+
+                            <circle
+                                cx="270"
+                                cy="153"
+                                r="9"
+                                fill="white"
+                            />
+
+                        </svg>
+
+                    </div>
+
+
+                    <h2>
+                        Acessibilidade visual
+                    </h2>
+
+                    <p>
+                        Informação acessível pode transformar
+                        experiências e ampliar oportunidades.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SOBRE
+        ========================== -->
+
+        <section
+            id="sobre"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>
+                        SOBRE O PROJETO
+                    </span>
+
+                    <h2>
+                        A tecnologia pode aproximar pessoas.
+                    </h2>
+
+                    <p>
+                        O VisãoAcolhedora foi criado para
+                        compartilhar informações sobre baixa visão,
+                        acessibilidade e soluções tecnológicas.
+                    </p>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <div class="info-illustration">
+
+                        <svg
+                            viewBox="0 0 120 120"
+                            aria-hidden="true"
+                        >
+
+                            <circle
+                                cx="60"
+                                cy="60"
+                                r="55"
+                                fill="#fce4ec"
+                            />
+
+                            <rect
+                                x="32"
+                                y="25"
+                                width="56"
+                                height="70"
+                                rx="8"
+                                fill="#d81b60"
+                            />
+
+                            <rect
+                                x="39"
+                                y="34"
+                                width="42"
+                                height="35"
+                                rx="4"
+                                fill="#fff"
+                            />
+
+                            <circle
+                                cx="60"
+                                cy="82"
+                                r="5"
+                                fill="#fff"
+                            />
+
+                        </svg>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Inclusão começa com informação.
+                        </h3>
+
+                        <p>
+                            Pessoas com baixa visão podem encontrar
+                            dificuldades em ambientes digitais,
+                            educacionais e profissionais.
+                            Recursos acessíveis e tecnologias assistivas
+                            ajudam a reduzir essas barreiras.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CAUSAS
+        ========================== -->
+
+        <section
+            id="causas"
+            class="section light"
+        >
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>
+                        ENTENDENDO A BAIXA VISÃO
+                    </span>
+
+                    <h2>
+                        Existem diferentes causas e necessidades.
+                    </h2>
+
+                    <p>
+                        A baixa visão pode estar relacionada a
+                        diferentes condições e cada pessoa pode
+                        apresentar necessidades específicas.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="35"
+                                    fill="#f8bbd0"
+                                />
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="18"
+                                    fill="#ad1457"
+                                />
+
+                                <circle
+                                    cx="47"
+                                    cy="33"
+                                    r="5"
+                                    fill="white"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Alterações oculares
+                        </h3>
+
+                        <p>
+                            Algumas doenças e alterações dos olhos
+                            podem afetar a capacidade de enxergar
+                            detalhes, cores ou contrastes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="35"
+                                    fill="#fce4ec"
+                                />
+
+                                <path
+                                    d="M20 48 L35 32 L47 43 L60 25"
+                                    fill="none"
+                                    stroke="#d81b60"
+                                    stroke-width="6"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Dificuldade de contraste
+                        </h3>
+
+                        <p>
+                            Textos e objetos com pouco contraste
+                            podem ser difíceis de identificar.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="35"
+                                    fill="#f8bbd0"
+                                />
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="20"
+                                    fill="none"
+                                    stroke="#ad1457"
+                                    stroke-width="6"
+                                />
+
+                                <line
+                                    x1="55"
+                                    y1="55"
+                                    x2="67"
+                                    y2="67"
+                                    stroke="#ad1457"
+                                    stroke-width="7"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Necessidade de ampliação
+                        </h3>
+
+                        <p>
+                            Algumas pessoas precisam ampliar
+                            textos, imagens ou elementos digitais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="35"
+                                    fill="#fce4ec"
+                                />
+
+                                <rect
+                                    x="22"
+                                    y="25"
+                                    width="36"
+                                    height="30"
+                                    rx="5"
+                                    fill="#d81b60"
+                                />
+
+                                <path
+                                    d="M30 62 H50"
+                                    stroke="#ad1457"
+                                    stroke-width="6"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Acessibilidade digital
+                        </h3>
+
+                        <p>
+                            Sites e aplicativos acessíveis podem
+                            facilitar o acesso à informação.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TECNOLOGIA
+        ========================== -->
+
+        <section
+            id="tecnologia"
+            class="section technology-section"
+        >
+
+            <div class="container">
+
+                <div class="section-title white">
+
+                    <span>
+                        TECNOLOGIA ASSISTIVA
+                    </span>
+
+                    <h2>
+                        Ferramentas que ajudam a enxergar o mundo.
+                    </h2>
+
+                    <p>
+                        A tecnologia pode oferecer diferentes
+                        formas de acessar conteúdos e informações.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-grid">
+
+
+                    <article class="technology">
+
+                        <div class="technology-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <rect
+                                    x="22"
+                                    y="12"
+                                    width="36"
+                                    height="56"
+                                    rx="6"
+                                    fill="white"
+                                />
+
+                                <rect
+                                    x="28"
+                                    y="20"
+                                    width="24"
+                                    height="32"
+                                    fill="#ec407a"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Ampliação
+                        </h3>
+
+                        <p>
+                            Ferramentas que aumentam textos,
+                            imagens e elementos da tela.
+                        </p>
+
+                    </article>
+
+
+                    <article class="technology">
+
+                        <div class="technology-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="28"
+                                    fill="white"
+                                />
+
+                                <path
+                                    d="M28 40 Q40 25 52 40 Q40 55 28 40"
+                                    fill="#d81b60"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Leitores de tela
+                        </h3>
+
+                        <p>
+                            Transformam conteúdos escritos
+                            em informações sonoras.
+                        </p>
+
+                    </article>
+
+
+                    <article class="technology">
+
+                        <div class="technology-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="28"
+                                    fill="white"
+                                />
+
+                                <path
+                                    d="M25 40 H55"
+                                    stroke="#d81b60"
+                                    stroke-width="6"
+                                />
+
+                                <path
+                                    d="M40 25 V55"
+                                    stroke="#d81b60"
+                                    stroke-width="6"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Alto contraste
+                        </h3>
+
+                        <p>
+                            Melhora a diferenciação entre
+                            elementos e textos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="technology">
+
+                        <div class="technology-icon">
+
+                            <svg viewBox="0 0 80 80">
+
+                                <circle
+                                    cx="40"
+                                    cy="40"
+                                    r="28"
+                                    fill="white"
+                                />
+
+                                <path
+                                    d="M25 50 L35 35 L45 45 L57 28"
+                                    fill="none"
+                                    stroke="#d81b60"
+                                    stroke-width="6"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Personalização
+                        </h3>
+
+                        <p>
+                            Permite adaptar tamanho, cores
+                            e espaçamento conforme a necessidade.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RECURSOS
+        ========================== -->
+
+        <section
+            id="recursos"
+            class="section light"
+        >
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>
+                        RECURSOS
+                    </span>
+
+                    <h2>
+                        Recursos para uma experiência mais acessível.
+                    </h2>
+
+                </div>
+
+
+                <div class="resource-grid">
+
+
+                    <article>
+
+                        <div class="resource-image">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="#fce4ec"
+                                />
+
+                                <text
+                                    x="50"
+                                    y="62"
+                                    text-anchor="middle"
+                                    font-size="38"
+                                    font-weight="bold"
+                                    fill="#ad1457"
+                                >
+                                    A
+                                </text>
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Texto ampliado
+                        </h3>
+
+                        <p>
+                            Aumente ou diminua o tamanho da fonte.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <div class="resource-image">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="#f8bbd0"
+                                />
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="25"
+                                    fill="#ad1457"
+                                />
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="10"
+                                    fill="white"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Contraste
+                        </h3>
+
+                        <p>
+                            Ative uma combinação de cores
+                            com maior contraste.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <div class="resource-image">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="#fce4ec"
+                                />
+
+                                <rect
+                                    x="27"
+                                    y="25"
+                                    width="46"
+                                    height="50"
+                                    rx="6"
+                                    fill="#d81b60"
+                                />
+
+                                <circle
+                                    cx="50"
+                                    cy="67"
+                                    r="4"
+                                    fill="white"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>
+                            Navegação
+                        </h3>
+
+                        <p>
+                            Interface organizada e adaptável
+                            para diferentes dispositivos.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <div class="resource-image">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="#f8bbd0"
+                                />
+
+                                <path
+                                    d="M30 55 Q50 25 70 55"
+                                    fill="none"
+                                    stroke="#ad1457"
+                                    stroke-width="7"
